@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "972897447951",
+    "project_id": "excursionucc",
+    "storage_bucket": "excursionucc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972897447951:android:81cd0d95f9587eec36737a",
+        "android_client_info": {
+          "package_name": "com.example.excursion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFzDRz9scyfGmhLNMlVgmlgNcHUNc1TFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
