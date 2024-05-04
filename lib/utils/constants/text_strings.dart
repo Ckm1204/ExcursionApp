@@ -1,4 +1,4 @@
-import 'package:app_mobile/generated/app_localizations.dart';
+import 'package:excursion/generated/app_localizations.dart';
 import 'package:get/get.dart';
 
 class AppText {
@@ -7,6 +7,7 @@ class AppText {
   // Global texts
 
   // OnBoarding texts
+  /** 
   static String onBoardingTitle1 =
       AppLocalizations.of(Get.context!).onboarding('onBoardingTitle1');
   static String onBoardingTitle2 =
@@ -26,5 +27,5 @@ class AppText {
   static String loginEmail = AppLocalizations.of(Get.context!).login('loginEmail');
   static String loginPassword = AppLocalizations.of(Get.context!).login('loginPassword');
   static String loginSignIn = AppLocalizations.of(Get.context!).login('loginSignIn');
-
+*/
 }

@@ -65,4 +65,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'excursionucc.appspot.com',
     iosBundleId: 'com.example.excursion',
   );
+
 }

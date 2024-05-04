@@ -1,0 +1,6 @@
+{
+  "appTitle": "Mi Aplicación",
+  "content": "Hola",
+  "onboarding": "{name, select, onBoardingTitle1{Elija su producto} onBoardingSubTitle1{Bienvenido a un mundo de opciones ilimitadas: ¡su producto perfecto le espera!} onBoardingTitle2{Seleccione el método de pago} onBoardingSubTitle2{Para realizar transacciones sin problemas, elija su forma de pago} onBoardingTitle3{Entrega a domicilio} onBoardingSubTitle3{¡Entrega rápida, segura y sin contacto!} other{}}",
+  "login": "{name, select, loginEmail{Correo electrónico} loginPassword {Contraseña} loginSignIn{Iniciar sesión} other{}}"
+}
