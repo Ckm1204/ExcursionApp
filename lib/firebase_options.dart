@@ -63,6 +63,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '972897447951',
     projectId: 'excursionucc',
     storageBucket: 'excursionucc.appspot.com',
+    iosClientId: '972897447951-oqdpdt0sh3gfb49o4m76osftp21l746n.apps.googleusercontent.com',
     iosBundleId: 'com.example.excursion',
   );
 

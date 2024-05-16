@@ -12,7 +12,12 @@
           "package_name": "com.example.excursion"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "972897447951-lb2l66fqfs4jrnlug8frjgc26d2v33p3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAFzDRz9scyfGmhLNMlVgmlgNcHUNc1TFo"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972897447951-lb2l66fqfs4jrnlug8frjgc26d2v33p3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "972897447951-oqdpdt0sh3gfb49o4m76osftp21l746n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.excursion"
+              }
+            }
+          ]
         }
       }
     }

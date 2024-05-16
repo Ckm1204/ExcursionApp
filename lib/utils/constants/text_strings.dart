@@ -5,27 +5,15 @@ class AppText {
   AppText._();
 
   // Global texts
+  static String email = AppLocalizations.of(Get.context!).login('email');
+  static String password = AppLocalizations.of(Get.context!).login('password');
+  static String login = AppLocalizations.of(Get.context!).login('login');
+  static String userLogin = AppLocalizations.of(Get.context!).login('userLogin');
+  static String someError = AppLocalizations.of(Get.context!).login('someError');
 
-  // OnBoarding texts
-  /** 
-  static String onBoardingTitle1 =
-      AppLocalizations.of(Get.context!).onboarding('onBoardingTitle1');
-  static String onBoardingTitle2 =
-      AppLocalizations.of(Get.context!).onboarding('onBoardingTitle2');
-  static String onBoardingTitle3 =
-      AppLocalizations.of(Get.context!).onboarding('onBoardingTitle3');
 
-  static String onBoardingSubTitle1 =
-      AppLocalizations.of(Get.context!).onboarding('onBoardingSubTitle1');
-  static String onBoardingSubTitle2 =
-      AppLocalizations.of(Get.context!).onboarding('onBoardingSubTitle2');
-  static String onBoardingSubTitle3 =
-      AppLocalizations.of(Get.context!).onboarding('onBoardingSubTitle3');
 
-  // Login texts
 
-  static String loginEmail = AppLocalizations.of(Get.context!).login('loginEmail');
-  static String loginPassword = AppLocalizations.of(Get.context!).login('loginPassword');
-  static String loginSignIn = AppLocalizations.of(Get.context!).login('loginSignIn');
-*/
+
+
 }
