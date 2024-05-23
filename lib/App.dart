@@ -1,10 +1,10 @@
 import 'package:excursion/generated/app_localizations.dart';
+import 'package:excursion/modules/home/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:excursion/App.dart';
 
 import 'package:excursion/utils/theme/theme.dart';
-import 'package:excursion/modules/authentication/screen/login/pages/login_screen.dart';
+import 'package:excursion/modules/authentication/login/pages/login_screen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -21,6 +21,10 @@ class App extends StatelessWidget {
       supportedLocales: AppLocalizations.supportedLocales,
       locale: const Locale('es', ''), // TODO: put here status management
       // locale: const Locale('en', ''),
+      routes: {
+        '/login': (context) => const LoginPage(),
+        '/home': (context) => const Home_page(),
+      }
     );
   }
 }

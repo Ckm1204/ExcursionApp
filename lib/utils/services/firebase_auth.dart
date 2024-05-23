@@ -39,37 +39,8 @@ class FirebaseAuthService {
 
   }
 
-  Future<User?> signInWithGoogle() async {
-    final GoogleSignIn _googleSignIn = GoogleSignIn();
 
-    try {
-      final GoogleSignInAccount? googleSignInAccount = await _googleSignIn.signIn();
-
-      if (googleSignInAccount != null) {
-        final GoogleSignInAuthentication googleSignInAuthentication = await googleSignInAccount.authentication;
-
-        final AuthCredential credential = GoogleAuthProvider.credential(
-          idToken: googleSignInAuthentication.idToken,
-          accessToken: googleSignInAuthentication.accessToken,
-        );
-
-        final UserCredential userCredential = await _auth.signInWithCredential(credential);
-        return userCredential.user;
-      }
-    } catch (e) {
-      showToast(message: "some error occured $e");
-    }
-
-    return null;
-  }
-
-
-
-
-
-
-
-
+  
   bool isUserLoggedIn() {
     User? user = FirebaseAuth.instance.currentUser;
     return user != null;

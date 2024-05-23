@@ -96,8 +96,26 @@ abstract class AppLocalizations {
   /// No description provided for @login.
   ///
   /// In es, this message translates to:
-  /// **'{name, select, email{correo electrónico} password{contraseña} login{iniciar sesión} userLogin{Usuario inicio sesion  correctamente con Google } someError{Algo salió mal} otherError{Ocurrió un error inesperado} other{Ocurrió un error inesperado}}'**
+  /// **'{name, select, email{correo electrónico} password{contraseña} login{iniciar sesión}  username{Nombre de usuario} userLogin{Usuario inicio sesion  correctamente con Google } someError{Algo salió mal} otherError{Ocurrió un error inesperado} other{Ocurrió un error inesperado} loginGoogle {Iniciar sesión con Google} dontHaveAcc{ ¿No tienes una cuenta?} signUp{Regístrate} other{} }'**
   String login(String name);
+
+  /// No description provided for @signUp.
+  ///
+  /// In es, this message translates to:
+  /// **'{ name, select, alHaveAcc{¿ Ya tienes una cuenta ?} username{Nombre de usuario} other{}}'**
+  String signUp(String name);
+
+  /// No description provided for @home.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, welcome{Bienvenido} other{}}'**
+  String home(String name);
+
+  /// No description provided for @nav_bar.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, home{Inicio} profile{Perfil} search{Buscar} other{}}'**
+  String nav_bar(String name);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

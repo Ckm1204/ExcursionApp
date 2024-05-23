@@ -55,6 +55,15 @@ android {
         minSdkVersion 21
     }
 
+        lintOptions {
+            warningsAsErrors true
+            abortOnError true
+            checkReleaseBuilds true
+            disable 'InvalidPackage'
+            lintConfig file("lint.xml")
+        }
+
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
@@ -68,4 +77,8 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+}
+
+apply plugin: 'com.google.gms.google-services'
+

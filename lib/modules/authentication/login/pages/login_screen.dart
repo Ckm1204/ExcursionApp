@@ -11,6 +11,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import 'package:excursion/utils/helpers/toast.dart';
 import 'package:excursion/utils/constants/colors.dart';
 import 'package:excursion/utils/constants/sizes.dart';
+import 'package:excursion/modules/home/home_page.dart';
 
 
 
@@ -41,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text("Login", style: TextStyle(color: AppColors.textPrimary)),
+        title: Text(AppText.login, style: TextStyle(color: AppColors.textPrimary)),
         backgroundColor: AppColors.primary,
       ),
       body: Center(
@@ -51,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Login",
+                AppText.login,
                 style: TextStyle(fontSize: AppSizes.fontSizeLg, fontWeight: FontWeight.bold, color: AppColors.textPrimary),
               ),
               SizedBox(
@@ -79,7 +80,7 @@ class _LoginPageState extends State<LoginPage> {
                 },
                 child: Container(
                   width: double.infinity,
-                  height: 45,
+                  height: AppSizes.buttonLogin,
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(10),
@@ -99,20 +100,12 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 10,),
               GestureDetector(
                 onTap: () {
-                  void _signInWithGoogle() async {
-                    User? user = await _auth.signInWithGoogle();
-                    if (user != null) {
-                      showToast(message: AppText.userLogin); // "User is successfully signed in with Google"
-                      Navigator.pushNamed(context, "/home");
-                    } else {
-                      showToast(message: AppText.someError); // "Some error occurred")
-                    }
-                  }
+                  _signInWithGoogle();
 
                 },
                 child: Container(
                   width: double.infinity,
-                  height: AppSizes.buttonHeight,
+                  height: AppSizes.buttonLogin,
                   decoration: BoxDecoration(
                     color: AppColors.error,
                     borderRadius: BorderRadius.circular(10),
@@ -124,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
                         Icon(FontAwesomeIcons.google, color: Colors.white,),
                         SizedBox(width: 10,),
                         Text(
-                          "Sign in with Google",
+                          AppText.loginGoogle, // "Sign in with Google"
                           style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -144,7 +137,7 @@ class _LoginPageState extends State<LoginPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Don't have an account?"),
+                  Text(AppText.dontHaveAcc), // "Don't have an account?"
                   SizedBox(
                     width: 5,
                   ),
@@ -157,7 +150,7 @@ class _LoginPageState extends State<LoginPage> {
                       );
                     },
                     child: Text(
-                      "Sign Up",
+                      AppText.signUp, // "Sign Up"
                       style: TextStyle(
                         color: Colors.blue,
                         fontWeight: FontWeight.bold,
@@ -190,6 +183,7 @@ class _LoginPageState extends State<LoginPage> {
     if (user != null) {
       showToast(message: "User is successfully signed in");
       Navigator.pushNamed(context, "/home");
+
     } else {
       showToast(message: "some error occured");
     }
@@ -212,7 +206,6 @@ class _LoginPageState extends State<LoginPage> {
           idToken: googleSignInAuthentication.idToken,
           accessToken: googleSignInAuthentication.accessToken,
         );
-
         await _firebaseAuth.signInWithCredential(credential);
         Navigator.pushNamed(context, "/home");
       }
@@ -226,3 +219,4 @@ class _LoginPageState extends State<LoginPage> {
 
 
 }
+

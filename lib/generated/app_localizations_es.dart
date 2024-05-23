@@ -14,10 +14,54 @@ class AppLocalizationsEs extends AppLocalizations {
         'email': 'correo electrónico',
         'password': 'contraseña',
         'login': 'iniciar sesión',
+        'username': 'Nombre de usuario',
         'userLogin': 'Usuario inicio sesion  correctamente con Google ',
         'someError': 'Algo salió mal',
         'otherError': 'Ocurrió un error inesperado',
         'other': 'Ocurrió un error inesperado',
+        'loginGoogle': 'Iniciar sesión con Google',
+        'dontHaveAcc': ' ¿No tienes una cuenta?',
+        'signUp': 'Regístrate',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String signUp(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'alHaveAcc': '¿ Ya tienes una cuenta ?',
+        'username': 'Nombre de usuario',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String home(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'welcome': 'Bienvenido',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String nav_bar(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'home': 'Inicio',
+        'profile': 'Perfil',
+        'search': 'Buscar',
+        'other': '',
       },
     );
     return '$_temp0';

@@ -4,11 +4,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:excursion/App.dart';
 
-import 'App.dart';
-import 'firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
 
   /// Todo: Add widgets binding
   /// Todo: Init Local Storage

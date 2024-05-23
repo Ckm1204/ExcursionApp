@@ -1,9 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import '../../../../../utils/services/firebase_auth.dart';
+import 'package:excursion/utils/services/firebase_auth.dart';
 import 'login_screen.dart';
 import '../widgets/form_container.dart';
-import '../../../../../utils/helpers/toast.dart';
+import 'package:excursion/utils/helpers/toast.dart';
+import 'package:excursion/utils/constants/text_strings.dart';
+import 'package:excursion/utils/constants/colors.dart';
+import 'package:excursion/utils/constants/sizes.dart';
+
 
 
 class SignUpPage extends StatefulWidget {
@@ -35,7 +39,7 @@ class _SignUpPageState extends State<SignUpPage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text("SignUp"),
+        title: Text(AppText.signUp, style: TextStyle(color: AppColors.textPrimary)),
       ),
       body: Center(
         child: Padding(
@@ -44,7 +48,7 @@ class _SignUpPageState extends State<SignUpPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Sign Up",
+                AppText.signUp,
                 style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
               ),
               SizedBox(
@@ -52,7 +56,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               FormContainerWidget(
                 controller: _usernameController,
-                hintText: "Username",
+                hintText: AppText.username, // username
                 isPasswordField: false,
               ),
               SizedBox(
@@ -60,7 +64,7 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               FormContainerWidget(
                 controller: _emailController,
-                hintText: "Email",
+                hintText: AppText.email, // email
                 isPasswordField: false,
               ),
               SizedBox(
@@ -68,11 +72,11 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               FormContainerWidget(
                 controller: _passwordController,
-                hintText: "Password",
+                hintText: AppText.password, // password
                 isPasswordField: true,
               ),
               SizedBox(
-                height: 30,
+                height: AppSizes.buttonLogin,
               ),
               GestureDetector(
                 onTap:  (){
@@ -81,14 +85,14 @@ class _SignUpPageState extends State<SignUpPage> {
                 },
                 child: Container(
                   width: double.infinity,
-                  height: 45,
+                  height: AppSizes.buttonLogin,
                   decoration: BoxDecoration(
                     color: Colors.blue,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
                       child: isSigningUp ? CircularProgressIndicator(color: Colors.white,):Text(
-                        "Sign Up",
+                        AppText.signUp, // Sign Up
                         style: TextStyle(
                             color: Colors.white, fontWeight: FontWeight.bold),
                       )),
@@ -100,7 +104,7 @@ class _SignUpPageState extends State<SignUpPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Already have an account?"),
+                  Text(AppText.alHaveAcc), // "Already have an account?"
                   SizedBox(
                     width: 5,
                   ),
@@ -113,7 +117,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                 (route) => false);
                       },
                       child: Text(
-                        "Login",
+                        AppText.login, // Login
                         style: TextStyle(
                             color: Colors.blue, fontWeight: FontWeight.bold),
                       ))
@@ -145,7 +149,7 @@ class _SignUpPageState extends State<SignUpPage> {
       showToast(message: "User is successfully created");
       Navigator.pushNamed(context, "/home");
     } else {
-      showToast(message: "Some error happend");
+      showToast(message: AppText.someError);
     }
   }
 }
