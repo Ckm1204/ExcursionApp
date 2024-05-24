@@ -116,6 +116,12 @@ abstract class AppLocalizations {
   /// In es, this message translates to:
   /// **'{name, select, home{Inicio} profile{Perfil} search{Buscar} other{}}'**
   String nav_bar(String name);
+
+  /// No description provided for @card_firestore.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, department{Departamento} name{Nombre} location{Ubicación} rating{Puntación} weather{Clima}  description{Descripción} other{}}'**
+  String card_firestore(String name);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

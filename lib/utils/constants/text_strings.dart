@@ -26,6 +26,14 @@ static String home = AppLocalizations.of(Get.context!).nav_bar('home');
 static String search = AppLocalizations.of(Get.context!).nav_bar('search');
 static String profile = AppLocalizations.of(Get.context!).nav_bar('profile');
 
+// CardFirestore
+static String name = AppLocalizations.of(Get.context!).card_firestore('name');
+static String department = AppLocalizations.of(Get.context!).card_firestore('department');
+static String description = AppLocalizations.of(Get.context!).card_firestore('description');
+static String location = AppLocalizations.of(Get.context!).card_firestore('location');
+static String weather = AppLocalizations.of(Get.context!).card_firestore('weather');
+static String rating = AppLocalizations.of(Get.context!).card_firestore('rating');
+
 
 
 }

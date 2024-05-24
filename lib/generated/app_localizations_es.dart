@@ -66,4 +66,21 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String card_firestore(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'department': 'Departamento',
+        'name': 'Nombre',
+        'location': 'Ubicación',
+        'rating': 'Puntación',
+        'weather': 'Clima',
+        'description': 'Descripción',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
 }

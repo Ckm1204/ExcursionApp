@@ -2,5 +2,6 @@
   "login": "{name, select, email{email} password{password} login{login} username{Username} userLogin{User is successfully signed in with Google} someError{Some error occurred} loginGoogle{Sign in with Google} dontHaveAcc{Don't have an account?} signUp{signUp}   other{}}",
   "signUp":"{name, select,  alHaveAcc{Already have an account?} username{Username} other{}}",
   "home": "{name, select, welcome{Welcome} other{}}",
-  "nav_bar": "{name, select, profile{Perfil} search{Search} home{Home} other{}}"
+  "nav_bar": "{name, select, profile{Perfil} search{Search} home{Home} other{}}",
+  "card_firestore": "{name, select, department{Department} location{Location} name{Name} rating{rating} weather{Weather}  description{Description} other{}}"
 }
