@@ -23,11 +23,11 @@ class PlaceDetailsScreen extends StatelessWidget {
             children: [
               place['img'] != null
                   ? Image.network(
-                place['img'],
-                width: double.infinity,
-                height: 200,
-                fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) => Icon(Icons.error),
+                    place['img'],
+                    width: double.infinity,
+                    height: 200,
+                    fit: BoxFit.cover,
+                         errorBuilder: (context, error, stackTrace) => Icon(Icons.error),
               )
                   : Icon(Icons.image_not_supported),
               SizedBox(height: 16.0),

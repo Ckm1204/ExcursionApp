@@ -8,10 +8,7 @@ import 'package:excursion/utils/constants/text_strings.dart';
 import 'package:excursion/generated/app_localizations.dart';
 import 'package:get/get.dart';
 import 'package:excursion/modules/home/home/card_firestore.dart';
-
-
-
-
+import 'package:excursion/modules/home/search/search_list.dart';
 
 
 class Home_nav_bar extends StatefulWidget {
@@ -26,7 +23,7 @@ class _Home_nav_barState extends State<Home_nav_bar> {
 
   static List<Widget> _widgetOptions = <Widget>[
     CardFirestore(),
-
+   SearchPlacesView() ,
     // Agrega aquí los widgets para las otras pestañas
   ];
 
@@ -34,7 +31,7 @@ class _Home_nav_barState extends State<Home_nav_bar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text('Excursion'),
       ),
 
 
@@ -77,9 +74,6 @@ class _Home_nav_barState extends State<Home_nav_bar> {
               GButton(
                 icon: Icons.person,
                 text: AppText.profile,
-
-
-
               ),
             ],
           ),
