@@ -35,5 +35,8 @@ static String weather = AppLocalizations.of(Get.context!).card_firestore('weathe
 static String rating = AppLocalizations.of(Get.context!).card_firestore('rating');
 
 
+// search
+static String searchTitle1 = AppLocalizations.of(Get.context!).search('searchTitle1');
+static String notFound = AppLocalizations.of(Get.context!).search('notFound');
 
 }

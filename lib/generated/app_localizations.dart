@@ -122,6 +122,12 @@ abstract class AppLocalizations {
   /// In es, this message translates to:
   /// **'{name, select, department{Departamento} name{Nombre} location{Ubicación} rating{Puntación} weather{Clima}  description{Descripción} other{}}'**
   String card_firestore(String name);
+
+  /// No description provided for @search.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, searchTitle1{Buscar por nombre o departamento} notFound{No se encontraron lugares} other{}}'**
+  String search(String name);
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

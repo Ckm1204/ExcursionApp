@@ -81,4 +81,17 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String search(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'searchTitle1': 'Search by name or department',
+        'notFound': 'no places found',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
 }

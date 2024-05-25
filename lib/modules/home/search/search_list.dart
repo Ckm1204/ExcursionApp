@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import '../home/screens/detail_place.dart';
+import 'package:excursion/utils/constants/text_strings.dart';
 
 class SearchPlacesView extends StatefulWidget {
   SearchPlacesView({super.key});
@@ -33,7 +34,7 @@ class _SearchPlacesViewState extends State<SearchPlacesView> {
               contentPadding: EdgeInsets.symmetric(horizontal: 8, vertical: 5),
               filled: true,
               fillColor: Colors.white,
-              hintText: 'Search by name or department',
+              hintText: '${AppText.searchTitle1}',
               hintStyle: TextStyle(color: Colors.grey),
               prefixIcon: Icon(
                 Icons.search,
@@ -67,7 +68,7 @@ class _SearchPlacesViewState extends State<SearchPlacesView> {
 
 
           if (places.isEmpty) {
-            return Center(child: Text("No places found"));
+            return Center(child: Text("${AppText.notFound}"));
           }
 
           return ListView.builder(

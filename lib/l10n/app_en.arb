@@ -3,5 +3,6 @@
   "signUp":"{name, select,  alHaveAcc{Already have an account?} username{Username} other{}}",
   "home": "{name, select, welcome{Welcome} other{}}",
   "nav_bar": "{name, select, profile{Perfil} search{Search} home{Home} other{}}",
-  "card_firestore": "{name, select, department{Department} location{Location} name{Name} rating{rating} weather{Weather}  description{Description} other{}}"
+  "card_firestore": "{name, select, department{Department} location{Location} name{Name} rating{rating} weather{Weather}  description{Description} other{}}",
+  "search": "{name, select, searchTitle1{Search by name or department} notFound{no places found}  other{}}"
 }
