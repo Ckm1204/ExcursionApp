@@ -33,6 +33,10 @@ static String description = AppLocalizations.of(Get.context!).card_firestore('de
 static String location = AppLocalizations.of(Get.context!).card_firestore('location');
 static String weather = AppLocalizations.of(Get.context!).card_firestore('weather');
 static String rating = AppLocalizations.of(Get.context!).card_firestore('rating');
+static String average = AppLocalizations.of(Get.context!).card_firestore('average');
+static String total = AppLocalizations.of(Get.context!).card_firestore('total');
+static String submit = AppLocalizations.of(Get.context!).card_firestore('submit');
+static String totalRatings = AppLocalizations.of(Get.context!).card_firestore('totalRatings');
 
 
 // search

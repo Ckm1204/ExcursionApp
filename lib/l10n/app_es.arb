@@ -3,6 +3,6 @@
   "signUp": "{ name, select, alHaveAcc{¿ Ya tienes una cuenta ?} username{Nombre de usuario} other{}}",
   "home": "{name, select, welcome{Bienvenido} other{}}",
   "nav_bar": "{name, select, home{Inicio} profile{Perfil} search{Buscar} other{}}",
-  "card_firestore": "{name, select, department{Departamento} name{Nombre} location{Ubicación} rating{Puntación} weather{Clima}  description{Descripción} other{}}",
+  "card_firestore": "{name, select, department{Departamento} name{Nombre} location{Ubicación} average{Promedio} total{Total puntuaciones} submit{Enviar puntaje} totalRatings{Total} rating{Puntación} weather{Clima}  description{Descripción} other{}}",
   "search": "{name, select, searchTitle1{Buscar por nombre o departamento} notFound{No se encontraron lugares} other{}}"
 }
