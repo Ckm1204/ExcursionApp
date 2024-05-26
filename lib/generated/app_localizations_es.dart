@@ -77,6 +77,8 @@ class AppLocalizationsEs extends AppLocalizations {
         'location': 'Ubicación',
         'average': 'Promedio',
         'total': 'Total puntuaciones',
+        'addComment': 'Escribe un comentario',
+        'submitComment': 'Enviar comentario',
         'submit': 'Enviar puntaje',
         'totalRatings': 'Total',
         'rating': 'Puntación',

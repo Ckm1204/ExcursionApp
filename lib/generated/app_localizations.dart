@@ -120,7 +120,7 @@ abstract class AppLocalizations {
   /// No description provided for @card_firestore.
   ///
   /// In es, this message translates to:
-  /// **'{name, select, department{Departamento} name{Nombre} location{Ubicación} average{Promedio} total{Total puntuaciones} submit{Enviar puntaje} totalRatings{Total} rating{Puntación} weather{Clima}  description{Descripción} other{}}'**
+  /// **'{name, select, department{Departamento} name{Nombre} location{Ubicación} average{Promedio} total{Total puntuaciones} addComment{Escribe un comentario} submitComment{Enviar comentario} submit{Enviar puntaje} totalRatings{Total} rating{Puntación} weather{Clima}  description{Descripción} other{}}'**
   String card_firestore(String name);
 
   /// No description provided for @search.

@@ -37,7 +37,8 @@ static String average = AppLocalizations.of(Get.context!).card_firestore('averag
 static String total = AppLocalizations.of(Get.context!).card_firestore('total');
 static String submit = AppLocalizations.of(Get.context!).card_firestore('submit');
 static String totalRatings = AppLocalizations.of(Get.context!).card_firestore('totalRatings');
-
+static String addComment = AppLocalizations.of(Get.context!).card_firestore('addComment');
+static String submitComment = AppLocalizations.of(Get.context!).card_firestore('submitComment');
 
 // search
 static String searchTitle1 = AppLocalizations.of(Get.context!).search('searchTitle1');
