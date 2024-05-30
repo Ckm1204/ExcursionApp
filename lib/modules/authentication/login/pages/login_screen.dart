@@ -42,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text(AppText.login, style: TextStyle(color: AppColors.textPrimary)),
+        title: const Text('Excursion', style: TextStyle(color: AppColors.textPrimary)),
         backgroundColor: AppColors.primary,
       ),
       body: Center(

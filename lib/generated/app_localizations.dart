@@ -93,6 +93,12 @@ abstract class AppLocalizations {
     Locale('es')
   ];
 
+  /// No description provided for @onboarding.
+  ///
+  /// In es, this message translates to:
+  /// **'{name, select, onBoardingTitle1{Siempre hay un lugar para explorar} onBoardingSubTitle1{Con Excursion encontrarás los mejores lugares de Colombia con sus detalles } onBoardingTitle2{Colombia} onBoardingSubTitle2{Un pais lleno de maravillas} onBoardingTitle3{Gratis} onBoardingSubTitle3{Excursion es una app totalmente gratuita, ! Prepara tus maletas y comienza a explorar ¡} other{}}'**
+  String onboarding(String name);
+
   /// No description provided for @login.
   ///
   /// In es, this message translates to:

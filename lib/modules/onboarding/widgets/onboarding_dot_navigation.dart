@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
-import 'package:app_mobile/modules/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:app_mobile/utils/constants/colors.dart';
-import 'package:app_mobile/utils/constants/sizes.dart';
-import 'package:app_mobile/utils/device/device_utility.dart';
-import 'package:app_mobile/utils/helpers/helper_functions.dart';
+import 'package:excursion/modules/onboarding/controllers/onboarding_controller.dart';
+import 'package:excursion/utils/constants/colors.dart';
+import 'package:excursion/utils/constants/sizes.dart';
+import 'package:excursion/utils/device/device_utility.dart';
+import 'package:excursion/utils/helpers/helper_functions.dart';
 
 class OnBoardingDotNavigation extends StatelessWidget {
   const OnBoardingDotNavigation({

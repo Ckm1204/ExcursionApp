@@ -9,6 +9,7 @@ import 'package:excursion/generated/app_localizations.dart';
 import 'package:get/get.dart';
 import 'package:excursion/modules/home/home/card_firestore.dart';
 import 'package:excursion/modules/home/search/search_list.dart';
+import 'package:excursion/modules/home/profile/profile.dart';
 
 
 class Home_nav_bar extends StatefulWidget {
@@ -23,7 +24,9 @@ class _Home_nav_barState extends State<Home_nav_bar> {
 
   static List<Widget> _widgetOptions = <Widget>[
     CardFirestore(),
-   SearchPlacesView() ,
+   SearchPlacesView(),
+    ProfilePage(),
+
     // Agrega aquí los widgets para las otras pestañas
   ];
 

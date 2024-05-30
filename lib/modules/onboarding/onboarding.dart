@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'package:app_mobile/modules/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:app_mobile/modules/authentication/screens/onboarding/widgets/onboarding_elevated_button.dart';
-import 'package:app_mobile/modules/authentication/screens/onboarding/widgets/onboarding_dot_navigation.dart';
-import 'package:app_mobile/modules/authentication/screens/onboarding/widgets/onboarding_page.dart';
-import 'package:app_mobile/modules/authentication/screens/onboarding/widgets/onboarding_skip.dart';
-import 'package:app_mobile/utils/constants/image_strings.dart';
-import 'package:app_mobile/utils/constants/text_strings.dart';
+import 'package:excursion/modules/onboarding/controllers/onboarding_controller.dart';
+
+import 'package:excursion/modules/onboarding/widgets/onboarding_elevated_button.dart';
+import 'package:excursion/modules/onboarding/widgets/onboarding_dot_navigation.dart';
+import 'package:excursion/modules/onboarding/widgets/onboarding_page.dart';
+import 'package:excursion/modules/onboarding/widgets/onboarding_skip.dart';
+import 'package:excursion/utils/constants/image_strings.dart';
+import 'package:excursion/utils/constants/text_strings.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});

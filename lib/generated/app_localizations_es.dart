@@ -7,6 +7,23 @@ class AppLocalizationsEs extends AppLocalizations {
   AppLocalizationsEs([String locale = 'es']) : super(locale);
 
   @override
+  String onboarding(String name) {
+    String _temp0 = intl.Intl.selectLogic(
+      name,
+      {
+        'onBoardingTitle1': 'Siempre hay un lugar para explorar',
+        'onBoardingSubTitle1': 'Con Excursion encontrarás los mejores lugares de Colombia con sus detalles ',
+        'onBoardingTitle2': 'Colombia',
+        'onBoardingSubTitle2': 'Un pais lleno de maravillas',
+        'onBoardingTitle3': 'Gratis',
+        'onBoardingSubTitle3': 'Excursion es una app totalmente gratuita, ! Prepara tus maletas y comienza a explorar ¡',
+        'other': '',
+      },
+    );
+    return '$_temp0';
+  }
+
+  @override
   String login(String name) {
     String _temp0 = intl.Intl.selectLogic(
       name,

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import 'package:app_mobile/modules/authentication/controllers/onboarding/onboarding_controller.dart';
-import 'package:app_mobile/utils/constants/colors.dart';
-import 'package:app_mobile/utils/helpers/helper_functions.dart';
-import 'package:app_mobile/utils/constants/sizes.dart';
-import 'package:app_mobile/utils/device/device_utility.dart';
+import 'package:excursion/modules/onboarding/controllers/onboarding_controller.dart';
+import 'package:excursion/utils/constants/colors.dart';
+import 'package:excursion/utils/helpers/helper_functions.dart';
+import 'package:excursion/utils/constants/sizes.dart';
+import 'package:excursion/utils/device/device_utility.dart';
 
 class OnBoardingElevatedButton extends StatelessWidget {
   const OnBoardingElevatedButton({

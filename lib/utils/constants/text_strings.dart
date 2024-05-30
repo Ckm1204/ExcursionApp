@@ -6,6 +6,16 @@ class AppText {
 
   // Global texts
 
+
+  // OnBoarding texts
+
+  static String onBoardingTitle1 = AppLocalizations.of(Get.context!).onboarding('onBoardingTitle1');
+  static String onBoardingTitle2 = AppLocalizations.of(Get.context!).onboarding('onBoardingTitle2');
+  static String onBoardingTitle3 = AppLocalizations.of(Get.context!).onboarding('onBoardingTitle3');
+  static String onBoardingSubTitle1 = AppLocalizations.of(Get.context!).onboarding('onBoardingSubTitle1');
+  static String onBoardingSubTitle2 = AppLocalizations.of(Get.context!).onboarding('onBoardingSubTitle2');
+  static String onBoardingSubTitle3 = AppLocalizations.of(Get.context!).onboarding('onBoardingSubTitle3');
+
   // Login texts
   static String email = AppLocalizations.of(Get.context!).login('email');
   static String password = AppLocalizations.of(Get.context!).login('password');
@@ -44,4 +54,9 @@ static String submitComment = AppLocalizations.of(Get.context!).card_firestore('
 static String searchTitle1 = AppLocalizations.of(Get.context!).search('searchTitle1');
 static String notFound = AppLocalizations.of(Get.context!).search('notFound');
 
+
+// profile
+static String profileTitle1 = AppLocalizations.of(Get.context!).search('profileTitle1');
+static String dob = AppLocalizations.of(Get.context!).search('dob');
+static String save = AppLocalizations.of(Get.context!).search('save');
 }
